@@ -3,6 +3,6 @@
     "password": "greet",
     "hostname": "http://localhost:3000",
     "useSSL": "false",
-    "subscribeTo": "",
+    "subscribeTo": "GENERAL",
     "scope": ""
 }
