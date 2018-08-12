@@ -2,7 +2,7 @@
   {
     "id": "builtin_text-pSsHWg",
     "formData": {
-      "text": "Nice to meet you, {{state.$r}}!",
+      "text": "Hi, {{state.$r}}!",
       "variations": [
         "Hello, {{state.$r}}!"
       ],
@@ -23,7 +23,7 @@
   {
     "id": "builtin_text-bFsOmf",
     "formData": {
-      "text": "Awesome, state.$r! :fireworks: so go talk with my friend in http://localhost:3000/direct/show",
+      "text": "Awesome, you said  {{state.$r}}! :fireworks: so go talk with my friend in http://localhost:3000/direct/show",
       "typing": true
     },
     "createdBy": "admin",
@@ -68,7 +68,7 @@
   {
     "id": "builtin_text-fLvQ1_",
     "formData": {
-      "text": "Do you want to learn more about Rocket.Chat?:rocket: ",
+      "text": "Hello, Human, I am a bot made using BOTPRESS technology! :robot:",
       "typing": true
     },
     "createdBy": "admin",
@@ -77,10 +77,19 @@
   {
     "id": "builtin_text-eC4Tzk",
     "formData": {
-      "text": "Ok, if you need something else, please lmk :robot: ",
+      "text": "You said {{state.$r}}, this means negative to me :disappointed: If you need something else, please lmk :robot: ",
       "typing": true
     },
     "createdBy": "admin",
     "createdOn": "2018-08-12T19:15:43.294Z"
+  },
+  {
+    "id": "builtin_text-09zJgM",
+    "formData": {
+      "text": "Do you want to learn more about Rocket.Chat? :rocket:",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-08-12T19:32:49.559Z"
   }
 ]

@@ -31,25 +31,6 @@
       ]
     },
     {
-      "id": "7099199f90",
-      "name": "first-time",
-      "next": [
-        {
-          "condition": "state.$affirm===\"yes\"",
-          "node": "many-times"
-        },
-        {
-          "condition": "true",
-          "node": "negate"
-        }
-      ],
-      "onEnter": [
-        "say #!builtin_text-AY5SSW",
-        "getConversationVariable {\"name\":\"affirm\",\"output\":\"$affirm\"}"
-      ],
-      "onReceive": []
-    },
-    {
       "id": "c69ee2d71f",
       "name": "many-times",
       "next": [],
@@ -128,7 +109,7 @@
         }
       ],
       "onEnter": [
-        "say #!builtin_text-fLvQ1_"
+        "say #!builtin_text-09zJgM"
       ],
       "onReceive": [
         "setUserVariable {\"name\":\"affirm\",\"value\":\"{{event.text}}\",\"expiry\":\"never\"}",
