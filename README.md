@@ -20,7 +20,16 @@ add to `config/channel-rocketchat.json`:
 
 # SHOW
 ## Rasa
+```sh
+git clone https://github.com/RocketChat/rasa-kick-starter
+cd rasa-kick-starter
+rm -rf .git
+```
 
 # SELL
 ## botkit
-
+```sh
+git clone https://github.com/RocketChat/botkit-starter-rocketchat
+cd botkit-starter-rocketchat
+rm -rf .git
+```
