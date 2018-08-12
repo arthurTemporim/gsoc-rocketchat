@@ -1,0 +1,40 @@
+version: '2'
+
+services:
+  mongo:
+    image: mongo
+    volumes:
+    - ./chat/data/db:/data/db
+    - ./chat/data/dump:/dump
+    tty: true
+    command:
+    - mongod
+    - --smallfiles
+    - --oplogSize
+    - '128'
+ 
+  rocketchat:
+    image: rocket.chat:0.68.3
+    restart: unless-stopped
+    depends_on:
+      - mongo
+    environment:
+      MONGO_URL: 'mongodb://mongo:27017/rocketchat'
+      PORT: '3000'
+      ROOT_URL: 'http://localhost:3000'
+    volumes:
+      - ./chat/uploads:/app/uploads
+    ports:
+      - '3000:3000'
+
+  bot_rasa:
+    build: ../show/Dockerfile
+    environment:
+      - TRAINING_EPOCHS=300
+      - PORT=5005
+      - CONNECTOR=rocketchat
+    ports:
+      - 5005:5005
+    volumes:
+     - .:/opt/bot_rasa
+

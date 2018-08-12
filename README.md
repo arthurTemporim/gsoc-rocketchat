@@ -33,3 +33,11 @@ git clone https://github.com/RocketChat/botkit-starter-rocketchat
 cd botkit-starter-rocketchat
 rm -rf .git
 ```
+
+# Rocket.Chat
+```sh
+docker-compose up -d mongo
+docker-compose up rocketchat
+```
+
+* Add all bot users to Rocket.Chat
