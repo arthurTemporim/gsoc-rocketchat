@@ -2,8 +2,10 @@
   {
     "id": "builtin_text-pSsHWg",
     "formData": {
-      "text": "👋, {{state.$r}}!",
-      "variations": ["Hello, {{state.$r}}!", "Welcome to Botpress, {{state.$r}}!"],
+      "text": "Nice to meet you, {{state.$r}}!",
+      "variations": [
+        "Hello, {{state.$r}}!"
+      ],
       "typing": true
     },
     "createdBy": "admin",
@@ -12,7 +14,7 @@
   {
     "id": "builtin_text-AY5SSW",
     "formData": {
-      "text": "This is the first time we speak 🤖",
+      "text": "Do you want to learn more about Rocket.Chat?:rocket: ",
       "typing": true
     },
     "createdBy": "admin",
@@ -21,7 +23,7 @@
   {
     "id": "builtin_text-bFsOmf",
     "formData": {
-      "text": "We already spoke {{state.$r}} times!",
+      "text": "Awesome, state.$r! :fireworks: so go talk with my friend in http://localhost:3000/direct/show",
       "typing": true
     },
     "createdBy": "admin",
@@ -62,5 +64,23 @@
     },
     "createdBy": "admin",
     "createdOn": "2018-05-14T01:17:55.317Z"
+  },
+  {
+    "id": "builtin_text-fLvQ1_",
+    "formData": {
+      "text": "Do you want to learn more about Rocket.Chat?:rocket: ",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-08-12T19:03:24.630Z"
+  },
+  {
+    "id": "builtin_text-eC4Tzk",
+    "formData": {
+      "text": "Ok, if you need something else, please lmk :robot: ",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-08-12T19:15:43.294Z"
   }
 ]

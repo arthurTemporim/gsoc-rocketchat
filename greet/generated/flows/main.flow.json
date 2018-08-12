@@ -14,31 +14,48 @@
     {
       "id": "bda0320009",
       "name": "welcome",
-      "onEnter": ["say #!builtin_text-pSsHWg", "getTotalNumberOfConversations {}"],
+      "onEnter": [
+        "say #!builtin_text-pSsHWg",
+        "getTotalNumberOfConversations {}"
+      ],
       "onReceive": null,
       "next": [
         {
           "condition": "state.$r === 0",
-          "node": "first-time"
+          "node": "ask-learn-more"
         },
         {
           "condition": "state.$r > 0",
-          "node": "many-times"
+          "node": "ask-learn-more"
         }
       ]
     },
     {
       "id": "7099199f90",
       "name": "first-time",
-      "next": [],
-      "onEnter": ["say #!builtin_text-AY5SSW", "say #!builtin_text-X069Le"],
-      "onReceive": null
+      "next": [
+        {
+          "condition": "state.$affirm===\"yes\"",
+          "node": "many-times"
+        },
+        {
+          "condition": "true",
+          "node": "negate"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-AY5SSW",
+        "getConversationVariable {\"name\":\"affirm\",\"output\":\"$affirm\"}"
+      ],
+      "onReceive": []
     },
     {
       "id": "c69ee2d71f",
       "name": "many-times",
       "next": [],
-      "onEnter": ["say #!builtin_text-bFsOmf"],
+      "onEnter": [
+        "say #!builtin_text-bFsOmf"
+      ],
       "onReceive": null
     },
     {
@@ -55,7 +72,9 @@
     {
       "id": "a54a82eb7c",
       "name": "entry",
-      "onEnter": ["getUserVariable {\"name\":\"nickname\",\"output\":\"$r\"}"],
+      "onEnter": [
+        "getUserVariable {\"name\":\"nickname\",\"output\":\"$r\"}"
+      ],
       "onReceive": null,
       "next": [
         {
@@ -77,10 +96,43 @@
           "node": "welcome"
         }
       ],
-      "onEnter": ["say #!builtin_text-z0J9qh"],
+      "onEnter": [
+        "say #!builtin_text-fLvQ1_",
+        "say #!builtin_text-z0J9qh"
+      ],
       "onReceive": [
         "setUserVariable {\"name\":\"nickname\",\"value\":\"{{event.text}}\",\"expiry\":\"never\"}",
         "getUserVariable {\"name\":\"nickname\",\"output\":\"$r\"}"
+      ]
+    },
+    {
+      "id": "876500970c",
+      "name": "negate",
+      "next": [],
+      "onEnter": [
+        "say #!builtin_text-eC4Tzk"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "7ee0acf1d9",
+      "name": "ask-learn-more",
+      "next": [
+        {
+          "condition": "state.$r===\"yes\"",
+          "node": "many-times"
+        },
+        {
+          "condition": "true",
+          "node": "negate"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-fLvQ1_"
+      ],
+      "onReceive": [
+        "setUserVariable {\"name\":\"affirm\",\"value\":\"{{event.text}}\",\"expiry\":\"never\"}",
+        "getUserVariable {\"name\":\"affirm\",\"output\":\"$r\"}"
       ]
     }
   ]
