@@ -1,4 +1,4 @@
-const port = process.env.BOTPRESS_PORT || process.env.PORT || 3000
+const port = process.env.BOTPRESS_PORT || process.env.PORT || 3001
 const botUrl = process.env.BOTPRESS_URL || `http://localhost:${port}`
 
 module.exports = {
@@ -6,6 +6,7 @@ module.exports = {
     Botpress minimal supported version.
     Don't forget to change it when updating to the next major version.
    */
+  //version: '10.24.4',
   version: '10.28.0',
 
   /*

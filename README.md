@@ -6,7 +6,7 @@ npm install --save botpress-channel-rocketchat
 npm install
 npm audit fix
 ```
-add to `config/channel-rocketchat.json`:
+* Add to `config/channel-rocketchat.json`:
 ```json
 {
     "username": "greet",
@@ -16,6 +16,11 @@ add to `config/channel-rocketchat.json`:
     "subscribeTo": "",
     "scope": ""
 }
+```
+
+* Change the host of the botpress in `botfile.js`:
+```js
+const port = process.env.BOTPRESS_PORT || process.env.PORT || 3001
 ```
 
 # SHOW

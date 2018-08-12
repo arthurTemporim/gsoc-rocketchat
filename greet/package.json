@@ -1,29 +1,29 @@
 {
-  "name": "greet",
+  "name": "bpbot",
   "version": "1.0.0",
-  "description": "A greeting bot to interact with people in Rocket.Chat page.",
-  "main": "index.js",
+  "description": "",
+  "main": "src/index.js",
   "engines": {
     "node": ">= 6.1 < 9"
   },
   "dependencies": {
-    "@botpress/audience": "10.28.0",
-    "@botpress/builtins": "10.28.0",
-    "@botpress/channel-web": "10.28.0",
-    "@botpress/hitl": "10.28.0",
-    "@botpress/nlu": "10.28.0",
-    "@botpress/skill-choice": "10.28.0",
-    "botpress": "10.28.0",
+    "@botpress/audience": "^10.25.2",
+    "@botpress/builtins": "^10.25.2",
+    "@botpress/channel-web": "^10.25.2",
+    "@botpress/hitl": "^10.25.2",
+    "@botpress/nlu": "^10.25.2",
+    "@botpress/skill-choice": "^10.25.2",
+    "botpress": "^10.28.0",
     "botpress-channel-rocketchat": "0.0.5",
     "jsdoc-api": "^4.0.3",
     "lodash": "^4.17.10",
     "yn": "^2.0.0"
   },
   "scripts": {
-    "start": "node index.js",
+    "start": "botpress start",
     "ghost-sync": "botpress ghost-sync",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "github.com/arthurTemporim",
+  "author": "",
   "license": "AGPL-3.0-only"
 }
