@@ -1,0 +1,8 @@
+{
+    "username": "greet",
+    "password": "greet",
+    "hostname": "http://localhost:3000",
+    "useSSL": "false",
+    "subscribeTo": "",
+    "scope": ""
+}
