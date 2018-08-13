@@ -17,12 +17,9 @@
 - yes
 - yep
 - yes i want
-- shure
 - agree
+- affirmative
 - ok
-- i want
-- please
-- done
 
 ## intent:deny
 - no
@@ -30,3 +27,4 @@
 - not
 - i don't want
 - not today
+- negative

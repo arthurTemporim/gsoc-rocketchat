@@ -1,3 +1,7 @@
+# GSOC - OpenSource BotFrameworks
+
+This is an example of use of Rasa, Botkit and Botpress with Rocketchat.
+
 # GREET
 ## botpress
 ```sh
