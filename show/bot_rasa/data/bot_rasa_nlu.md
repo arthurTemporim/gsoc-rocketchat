@@ -22,6 +22,7 @@
 - ok
 - i want
 - please
+- done
 
 ## intent:deny
 - no

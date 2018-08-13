@@ -1,6 +1,7 @@
 intents:
   - greet
   - affirm 
+  - deny
 
 actions:
 - utter_greet
@@ -9,6 +10,8 @@ actions:
 - utter_channel_created
 - utter_ask_sell
 - utter_call_sell
+- utter_explain
+- utter_bye
 
 templates:
   utter_greet:
@@ -28,3 +31,9 @@ templates:
 
   utter_call_sell:
   - text: "I liked you, Human :thumbsup: Go talk with my friend http://localhost:3000/direct/sell"
+
+  utter_explain:
+  - text: "Sorry, i don't know other triks :/ But i am learning and when that day comes I'll teach you :robot:"
+
+  utter_bye:
+  - text: "Ok, if you need anything, please, lmk :thumbsup:"
