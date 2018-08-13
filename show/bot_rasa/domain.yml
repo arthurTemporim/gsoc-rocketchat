@@ -6,6 +6,9 @@ actions:
 - utter_greet
 - utter_direct
 - utter_channel
+- utter_channel_created
+- utter_ask_sell
+- utter_call_sell
 
 templates:
   utter_greet:
@@ -15,4 +18,13 @@ templates:
   - text: "Awesome!:fireworks: Follow me! This is a direct message page, here you can talk with anyone from your Rocket.Chat instance! Let's create a channel?"
 
   utter_channel:
-  - text: ""
+  - text: "Click in the `create channel icon` and fill the fields with the wanted data. Go to the new channel and don't forget to add me!"
+
+  utter_channel_created:
+  - text: "Awesome, you got it :D want to learn another trick?"
+
+  utter_ask_sell:
+  - text: "Do you want to have your own Rocket.Chat?"
+
+  utter_call_sell:
+  - text: "I liked you, Human :thumbsup: Go talk with my friend http://localhost:3000/direct/sell"

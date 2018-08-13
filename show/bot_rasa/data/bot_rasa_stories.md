@@ -3,3 +3,5 @@
   - utter_greet
 * affirm
   - utter_direct
+* affirm
+  - utter_channel

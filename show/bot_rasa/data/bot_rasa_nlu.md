@@ -19,3 +19,13 @@
 - yes i want
 - shure
 - agree
+- ok
+- i want
+- please
+
+## intent:deny
+- no
+- never
+- not
+- i don't want
+- not today
