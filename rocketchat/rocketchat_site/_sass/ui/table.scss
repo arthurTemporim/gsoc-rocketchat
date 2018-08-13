@@ -1,0 +1,129 @@
+.table {
+  @media screen and (min-width: $tablet) {
+    @include flexbox();
+  }
+
+  .table--layout {
+    display: none;
+    @media screen and (min-width: $tablet) {
+      display: block;
+    }
+  }
+
+  @media screen and (min-width: $tablet) {
+    &.table--two-column {
+      table {
+        max-width: 50%;
+      }
+    }
+
+    &.table--three-column {
+      table {
+        max-width: calc(100% / 3);
+      }
+    }
+  }
+
+  table {
+    table-layout: fixed;
+    margin-bottom: 2em;
+    width: calc(100% + 3px);
+
+    @media screen and (min-width: $tablet) {
+      @include flex(1);
+      margin-bottom: 0;
+
+      ~ table {
+        margin-left: -2px;
+        position: relative;
+
+        th span {
+          opacity: 0;
+        }
+      }
+    }
+  }
+
+  th {
+    font-size: 0.6em;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    line-height: 1.2;
+    padding: 1em 3.2em;
+    text-align: left;
+  }
+
+  td {
+    padding: 2em;
+    vertical-align: top;
+    min-width: 14em;
+    line-height: 1.2;
+  }
+
+  img {
+    display: inline-block;
+    margin-right: 0.5em;
+  }
+
+  p {
+    margin-bottom: 1em;
+  }
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+
+  span {
+    font-weight: 500;
+  }
+
+  .table_hide-mobile {
+    @media screen and (max-width: $tablet) {
+      display: none;
+    }
+  }
+
+  // Border-radius rules
+  table {
+    tr {
+      &:first-child td {
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px;
+
+        @media screen and (min-width: $tablet) {
+          border-radius: 0;
+        }
+      }
+      &:last-child td {
+        border-bottom-left-radius: 3px;
+        border-bottom-right-radius: 3px;
+
+        @media screen and (min-width: $tablet) {
+          border-radius: 0;
+        }
+      }
+    }
+
+    &:first-child {
+      tr {
+        &:first-child td {
+          border-top-left-radius: 3px;
+        }
+        &:last-child td {
+          border-bottom-left-radius: 3px;
+        }
+      }
+    }
+
+    &:last-child {
+      tr {
+        &:first-child td {
+          border-top-right-radius: 3px;
+        }
+        &:last-child td {
+          border-bottom-right-radius: 3px;
+        }
+      }
+    }
+  }
+}

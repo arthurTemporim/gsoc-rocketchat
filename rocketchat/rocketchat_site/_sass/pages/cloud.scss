@@ -1,0 +1,82 @@
+.cloud-hero__image {
+  position: absolute;
+  top: -50%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  background-image: url("../images/cloud/hero.jpg");
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-color: #1d74f5;
+
+  @media screen and (min-width: $tablet) {
+    background-image: url("../images/cloud/hero@2x.jpg");
+  }
+}
+
+body.cloud {
+  .headroom--top {
+    &.app-header_wrap {
+      background: none !important;
+
+      &:after {
+        opacity: 0.2;
+      }
+    }
+
+    .app-header_install,
+    .app-header_menu li {
+      color: #fff;
+
+      &:hover {
+        color: $grey-light;
+      }
+    }
+
+    .current-page {
+      color: rgba(255, 255, 255, 0.6);
+    }
+
+    .app-header_logo .dark {
+      opacity: 0;
+    }
+
+    #handle-menu:checked ~ .app-header_menu {
+      background: #327dd8;
+    }
+  }
+
+  @mixin headerStyle() {
+    background: none;
+
+    .app-header_wrap,
+    .app-header_menu {
+      background: none;
+    }
+
+    .headroom--not-top {
+      background: #fff;
+
+      .app-header_menu {
+        @media screen and (max-width: $tablet) {
+          background: #fff;
+        }
+      }
+      .app-header_wrap {
+        background: #fff;
+      }
+    }
+  }
+
+  // only IE
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    @include headerStyle();
+  }
+
+  // scroll
+  .app-header--light {
+    @include headerStyle();
+  }
+}

@@ -46,3 +46,19 @@ docker-compose up rocketchat
 ```
 
 * Add all bot users to Rocket.Chat
+
+## Rocket.Chat site
+```sh
+cd rocketchat
+git clone https://github.com/RocketChat/rocketchat.github.io.git rocketchat_site
+cd rocketchat_site/
+rm -Rf .git
+bundle install
+bundle exec "jekyll serve --incremental --safe"
+```
+
+I found how to run the Rocket.Chat site [here](https://github.com/RocketChat/rocketchat.github.io/blob/master/CONTRIBUTING.md).
+
+* Insert the `greet` **live chat** to Rocket.Chat site.
+
+* Acces `localhost:4000`

@@ -1,0 +1,52 @@
+.pagination {
+  border-radius: 2px;
+  background: $space-b;
+  padding: 0.5em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  @include flexbox();
+  @include justify-content(space-between);
+
+  @media screen and (min-width: $tablet) {
+    margin-top: 2em;
+    display: inline-block;
+  }
+
+  > span,
+  a {
+    display: inline-flex;
+    width: 2.3em;
+    height: 2.3em;
+    border-radius: 2px;
+    transition: background 0.3s ease;
+    color: #fff;
+    font-size: 0.8em;
+    line-height: 2.3em;
+    text-align: center;
+    vertical-align: top;
+
+    * {
+      margin: auto;
+    }
+  }
+
+  img {
+    width: 1.2em;
+  }
+
+  .current {
+    background: $brand;
+  }
+
+  a {
+    &:hover {
+      background: $grey-dark;
+    }
+  }
+
+  .inactive {
+    img {
+      opacity: 0.4;
+    }
+  }
+}

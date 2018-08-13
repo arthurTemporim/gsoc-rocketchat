@@ -1,0 +1,58 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  background: rgba($space, .9);
+  display: none;
+}
+
+.modal--show {
+  display: flex;
+  animation: appearsModal .5s ease;
+}
+
+.modal__wrap {
+  margin: auto;
+  animation: scaleIn .5s ease;
+  max-width: 90vw;
+  position: relative;
+
+  @media screen and (min-width: $tablet) {
+    width: 40vw;
+  }
+
+  .col--haft {
+    position: relative;
+    z-index: 1;
+  }
+}
+
+.modal__success {
+  position: absolute;
+  right: -1em;
+  bottom: 0em;
+  border-bottom-right-radius: 2px;
+}
+
+@keyframes appearsModal {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes scaleIn {
+  0% {
+    transform: scale(.9);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}

@@ -1,0 +1,47 @@
+title: "Free, Open Source, Enterprise Team Chat"
+description:  "Rocket.Chat is the leading open source team chat software solution. Free, unlimited and completely customizable with on-premises and SaaS cloud hosting."
+url: https://rocket.chat
+permalink: /:year/:month/:day/:title/
+paginate_path: /blog/page/:num/
+paginate: 8
+
+# bump if alterting styles
+version: 41
+
+# read speed
+wpm: 160
+
+# set default template for posts
+defaults:
+  - scope:
+      type: posts
+    values:
+      layout: post
+      class: post
+  - scope:
+      path: handbook
+    values:
+      layout: en/handbook
+      class: handbook
+      title: Rocket.Chat Handbook
+
+sass:
+  style: compressed
+  sass_dir: _sass
+
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-redirect-from
+  - jekyll-sitemap
+
+whitelist:
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-redirect-from
+  - jekyll-sitemap
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md

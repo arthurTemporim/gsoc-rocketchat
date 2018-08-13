@@ -1,0 +1,35 @@
+<div class="blog__header flex-grid">  
+  <p class="blog__list-cat col no-gutter">
+    <span>
+      <a class="label theme_type--dark {% if page.category == 'home' %}blog__list-current{% endif %}" href="/blog/index.html">Home</a>
+      {% assign categories_list = site.categories %}
+        {% if categories_list.first[0] == null %}
+          {% for category in categories_list %}
+            <a 
+              class="label theme_type--dark {% if category == page.category %}blog__list-current{% endif %}"
+              href="/category/{{ category | slugify }}"
+            >
+              {{ category }}
+            </a>
+          {% endfor %}
+        {% else %}
+          {% for category in categories_list %}
+            <a 
+              class="label theme_type--dark {% if category[0] == page.category %}blog__list-current{% endif %}"
+              href="/category/{{ category[0] | slugify }}"
+            >
+              {{ category[0] }}
+            </a>
+          {% endfor %}
+        {% endif %}
+      {% assign categories_list = nil %}
+    </span>
+  </p>
+
+  <div class="col--fourth no-gutter blog__search">
+    <div class="blog__search-wrap">
+      <input type="search" class="blog__search-input">
+      <ul class="blog__search-results"></ul>
+    </div>
+  </div>
+</div>

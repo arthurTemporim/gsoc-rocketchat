@@ -1,0 +1,5 @@
+desktop:
+  version: 2.11.0
+  windowsSize: 69 MB
+  macosSize: 52 MB
+  linuxSize: 36 MB

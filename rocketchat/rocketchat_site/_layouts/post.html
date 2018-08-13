@@ -1,0 +1,142 @@
+---
+layout: en/default
+class: post
+---
+
+<article class="blog-post">
+
+  <header class="blog-post__header">
+    <div class="container">
+      <div class="flex-grid grid--justify-around">
+        <div class="blog-post__header-wrap">
+          <p class="label--small theme_type--grey">
+            {% assign words = page.content | number_of_words %}
+            {% if words < site.wpm %} 1 min {% else %} {{ words | divided_by: site.wpm }} mins {% endif %} read
+            — {{ page.date | date: "%b %-d, %Y" }}
+          </p>
+          <h3 class="display--big theme_type--dark">{{ page.title }}</h3>
+          <div class="card--blog__data">
+            <p class="card--blog__category theme_box--dark-medium theme_type--dark tag">
+              <a href="/category/{{ page.categories[0] | slugify}}">
+                {{ page.categories[0] }}
+              </a>
+            </p>
+            <p class="card--blog__author text--small theme_type--grey">by {{ page.author }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  {% if page.cover %}
+    <img class="blog-post__cover" src="{{ page.cover }}" alt="{{ page.title }}" />
+  {% endif %}
+
+  <div class="blog-post__wrap">
+    {{ content }}
+  </div>
+
+  {% if page.ios_release %}
+    <div class="card theme_box--light blog-post__social flex-grid grid--center">
+      <p class="display--small type--nomargin col">Install the latest release:</p>
+      <a href="https://itunes.apple.com/app/rocket-chat/id1148741252">
+        <img class="itunes" src="/images/install/itunes-store.svg">
+      </a>
+    </div>
+  {% endif %}
+
+  <div class="space--2"></div>
+
+  <div class="card theme_box--light blog-post__social" id="social">
+    <p class="label--small theme_type--light">Share article</p>
+
+    <div class="share">
+      <script type="text/javascript" async defer src="//assets.pinterest.com/js/pinit.js"></script>
+
+      <a
+        class="twitter-share-button"
+        href="#social"
+        onclick="window.open('https://twitter.com/intent/tweet?text={{ page.title }}&url=https://rocket.chat{{ page.url }}&hashtags=Rocket.Chat','Facebook Share','width=800,height=600');"
+        data-size="large"
+        target="_blank"
+      >
+        <img src="/images/blog/twitter.svg" alt="Share on Tweet" />
+      </a>
+
+      <a
+        class="facebook-share-button"
+        href="#social"
+        onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=https://rocket.chat{{ page.url }}','Facebook Share','width=800,height=600');">
+        <img src="/images/blog/facebook.svg" alt="Share on Facebook" />
+      </a>
+
+      <a
+        href="#social"
+        target="_blank"
+        onclick="window.open('//www.reddit.com/submit?url=https://rocket.chat{{ page.url }}','Reddit Share','width=800,height=600');">
+        <img src="/images/blog/reddit.svg" alt="Share on Reddit" />
+      </a>
+
+      <a
+        href="mailto:?subject=I%20just%20read%20{{ page.title }}&body=Hey%2C%20I%20just%20read%20{{ page.title }}%20https://rocket.chat{{ page.url }}"
+      >
+        <img src="/images/blog/email.svg" alt="Share by Email" />
+      </a>
+    </div>
+  </div>
+
+  <div class="space--4"></div>
+</article>
+
+<div class="space--4"></div>
+
+{% assign RelatedList = "" | split: "" %}
+
+{% for post in site.posts %}
+  {% if post.url != page.url and post.categories contains page.categories[0] %}
+    {% assign RelatedList = RelatedList | push: post %}
+  {% endif %}
+{% endfor %}
+
+{% if RelatedList.size > 0 %}
+  <div class="blog-post__related theme_box--space">
+    <div class="container">
+      <h3 class="display--small theme_type--dark blog__section">
+        <span><strong>Related Articles</strong></span>
+        <small><a href="/category/{{ page.categories[0] | slugify}}" class="button--link">View all</a></small>
+      </h3>
+
+      <div class="flex-grid">
+        {% for related in RelatedList limit:3 %}
+          <div class="col">
+            <a
+              class="card--blog card--blog__image"
+              href="{{ related.url | remove: "index.html" }}"
+              {% if related.cover %}
+                style="background-image: url('{{ related.cover }}')"
+              {% else %}
+                style="background-image: url('/images/blog/post.jpg')"
+              {% endif %}
+            >
+              <div class="card--blog__wrap">
+                <p class="card--blog__meta label--small theme_type--grey">
+                  {{ related.date | date: "%b %-d, %Y" }}
+                  —
+                  {% assign words = related.content | number_of_words %}
+                  {% if words < site.wpm %} 1 min {% else %} {{ words | divided_by: site.wpm }} mins {% endif %} read
+                </p>
+                <h3 class="card--blog__title theme_type--dark">{{ related.title }}</h3>
+                <div class="card--blog__data">
+                  <p class="card--blog__category theme_box--dark-medium theme_type--dark tag">{{ related.categories[0] }}</p>
+                  <p class="card--blog__author text--small theme_type--grey">by {{ related.author }}</p>
+                </div>
+              </div>
+            </a>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+{% endif %}
+
+{% include webrules.html %}

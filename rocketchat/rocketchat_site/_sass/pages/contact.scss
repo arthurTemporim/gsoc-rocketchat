@@ -1,0 +1,132 @@
+.contact-map__container {
+  padding: 2em 0.5em;
+  overflow: hidden;
+
+  @media screen and (min-width: $tablet) {
+    padding: 0;
+    z-index: -1;
+    max-width: 66%;
+    overflow: visible;
+  }
+}
+
+.contact-map {
+  @media screen and (min-width: $tablet) {
+    position: relative;
+
+    &:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100vw;
+      height: 40%;
+      background-image: linear-gradient(0deg, rgba(#030c1a, 0) 0%, #030c1a 80%);
+      opacity: 1;
+    }
+  }
+}
+
+.contact-map__map {
+  display: none;
+
+  @media screen and (min-width: $tablet) {
+    display: block;
+    width: 140vw;
+    width: 90vw;
+    max-width: none;
+    margin-left: -7vw;
+  }
+
+  @media screen and (max-width: 82em) {
+    width: 75vw;
+  }
+}
+
+@media screen and (min-width: $tablet) and (max-width: 80em) {
+  .contact-map_list {
+    position: absolute;
+    position: absolute;
+    right: 3em;
+    top: 7em;
+  }
+}
+
+@media screen and (min-width: 80em) {
+  .contact-map__tooltip--brazil {
+    position: absolute;
+    left: 15vw;
+    bottom: 11vw;
+
+    &:before {
+      content: "";
+      display: block;
+      width: 0.5em;
+      height: 0.5em;
+      border-radius: 100%;
+      background: $brand;
+      position: absolute;
+      bottom: -20%;
+      left: calc(50% - 0.3em);
+    }
+  }
+
+  .contact-map__tooltip--eua {
+    position: absolute;
+    left: 5vw;
+    bottom: 27vw;
+
+    &:before {
+      content: "";
+      display: block;
+      width: 0.5em;
+      height: 0.5em;
+      border-radius: 100%;
+      background: $brand;
+      position: absolute;
+      bottom: -20%;
+      left: calc(50% - 0.3em);
+    }
+  }
+
+  .contact-map__tooltip--europe {
+    position: absolute;
+    left: 29vw;
+    bottom: 28vw;
+
+    &:before {
+      content: "";
+      display: block;
+      width: 0.5em;
+      height: 0.5em;
+      border-radius: 100%;
+      background: $brand;
+      position: absolute;
+      bottom: -20%;
+      left: calc(50% - 0.3em);
+    }
+  }
+}
+
+.contact-map__tooltip-wrap {
+  background: rgba($grey-dark, 0.55);
+  border-radius: 2px;
+  padding: 1.5em;
+  width: 100%;
+  margin-bottom: 1em;
+
+  @media screen and (min-width: 80em) {
+    margin-bottom: 0;
+    max-width: 19em;
+
+    &:after {
+      content: "";
+      display: block;
+      border: 0.5em solid transparent;
+      border-top: 0.5em solid rgba($grey-dark, 0.55);
+      position: absolute;
+      bottom: -1em;
+      left: calc(50% - 0.5em);
+    }
+  }
+}

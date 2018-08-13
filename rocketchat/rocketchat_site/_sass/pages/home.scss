@@ -1,0 +1,479 @@
+.home-backgrounds {
+  position: relative;
+  overflow: hidden;
+}
+
+.home-landingpage img {
+  @include transform(translateZ(0));
+}
+
+.home-landingpage__planets {
+  @include transform(translateZ(0));
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  background-image: url("../images/index/landingpage-orangeplanet.png");
+  background-repeat: no-repeat;
+
+  background-position: right -14% bottom 30%;
+  background-size: 10em auto;
+
+  @media screen and (min-width: $tablet) {
+    background-position: right -14% bottom 24%;
+    background-size: 30em auto;
+  }
+}
+
+.home-landingpage__stars {
+  @include transform(translateZ(0));
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("../images/index/landingpage-stars.jpg");
+  background-repeat: repeat;
+  background-position: center;
+  background-size: 100% auto;
+  @include transform(translate3d(0, 0, 0));
+}
+
+.home-landingpage__mail {
+  margin-left: -1em;
+
+  @media screen and (min-width: $tablet) {
+    width: 55vw;
+    margin-top: -33vw;
+    margin-left: -33vw;
+    max-width: none;
+  }
+}
+
+.home-landingpage__chat {
+  right: -1em;
+  position: relative;
+
+  @media screen and (min-width: $tablet) {
+    right: 0;
+    width: 55vw;
+    margin-left: -4vw;
+    max-width: none;
+  }
+}
+
+//
+//  Hero section
+//
+.home-hero {
+  position: relative;
+  z-index: 3;
+
+  @media screen and (min-width: $tablet) {
+    @include flexbox();
+    min-height: 70vh;
+  }
+
+  @media screen and (min-width: 75em) {
+    min-height: 90vh;
+  }
+
+  .install {
+    text-align: center;
+    margin: 2em -0.5em;
+
+    .button {
+      margin: 0.5em;
+    }
+
+    @media (min-width: $tablet) {
+      text-align: left;
+    }
+  }
+
+  a {
+    font-size: 0.9em;
+  }
+}
+
+.home-hero_wrap {
+  margin: 3em 0;
+
+  @media screen and (min-width: $tablet) {
+    max-width: 40%;
+    @include flex-basis(40%);
+    margin: 6em 0;
+  }
+}
+
+.home-hero_image {
+  position: relative;
+  right: -$gutter;
+  margin-bottom: 2em;
+
+  @media screen and (min-width: $tablet) {
+    position: absolute;
+    right: 0;
+    top: 5em;
+    height: calc(50vh - 6em);
+  }
+
+  @media screen and (min-width: 75em) {
+    height: calc(90vh - 6em);
+  }
+}
+
+//
+//  Generic box
+//
+.home-box {
+  border-radius: 2px;
+  position: relative;
+
+  @media screen and (min-width: $tablet) {
+    @include flexbox();
+    background-position: left top;
+  }
+}
+
+.home-box__wrap {
+  padding: 2em $gutter;
+  position: relative;
+  z-index: 2;
+
+  @media screen and (min-width: $tablet) {
+    max-width: 50%;
+    padding: 5em 6.5em 5em 7em;
+  }
+}
+
+.home-box__image {
+  @media screen and (min-width: $tablet) {
+    position: absolute;
+    right: 0px;
+    bottom: 0em;
+    border-bottom-right-radius: 2px;
+    height: 44vw;
+    max-height: 33em;
+  }
+}
+//
+//  Community section
+//
+.home-community {
+  background-color: $space-b;
+  @include justify-content(flex-end);
+
+  @media screen and (min-width: $tablet) {
+    background-size: 60% auto;
+    background-image: url("../images/index/join-community.jpg");
+    background-repeat: repeat-y;
+    animation: positionXHome 50s linear infinite;
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 50%;
+      bottom: 0;
+      background-image: linear-gradient(
+        90deg,
+        rgba(0, 0, 0, 0) 0%,
+        $space-b 100%
+      );
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      height: 35%;
+      background-image: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0) 3%,
+        $space 100%
+      );
+    }
+  }
+}
+
+@keyframes positionXHome {
+  0% {
+    background-position: left 3244px;
+  }
+  100% {
+    background-position: left 0;
+  }
+}
+
+.home-community_github {
+  display: inline-flex;
+  border-radius: 2px;
+  overflow: hidden;
+  width: 44%;
+  margin-right: 1em;
+  text-align: center;
+  font-size: 1em;
+  font-weight: 600;
+  line-height: 3.2;
+  transition: all 0.3s ease;
+  background: #2f3f5a;
+  color: #fff;
+
+  &:hover {
+    background: $grey-dark;
+  }
+
+  span:first-child {
+    background: $grey-dark;
+    font-weight: normal;
+  }
+
+  span {
+    @include flex(1);
+  }
+
+  img {
+    display: inline-block;
+    position: relative;
+    top: 0.15em;
+    margin-right: 0.5em;
+    transition: all 0.3s ease;
+  }
+
+  &:hover {
+    img {
+      opacity: 0.7;
+    }
+  }
+}
+
+.home-community_github-link {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-inline-flex;
+  display: inline-flex;
+  width: 100%;
+  margin-top: 1.5em;
+  transition: all 0.3s ease;
+  color: #fff;
+
+  img {
+    display: inline-block;
+    position: relative;
+    top: 0.1em;
+    margin-right: 0.5em;
+    transition: all 0.3s ease;
+  }
+
+  &:hover {
+    color: $grey-light;
+
+    img {
+      opacity: 0.7;
+    }
+  }
+}
+
+//
+//  Home enterprise
+//
+.home-enterprise {
+  position: relative;
+  margin-bottom: -12em;
+
+  > div {
+    background-image: url("../images/index/landingpage-stars.png");
+    background-position: right center;
+    background-size: 85%;
+  }
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: -17em;
+  }
+
+  + section {
+    padding-top: 16em;
+    @media screen and (min-width: $tablet) {
+      padding-top: 26em;
+      // padding-bottom: 15em;
+    }
+  }
+
+  .list {
+    margin-bottom: -1em;
+
+    @media screen and (min-width: $tablet) {
+      margin-bottom: -2.5em;
+    }
+
+    .list-img {
+      text-align: center;
+      padding-right: 0.5em;
+
+      img {
+        display: inline-block;
+      }
+    }
+
+    p {
+      margin-bottom: 0;
+      line-height: 1.4;
+    }
+
+    p:not(:last-child) {
+      margin-bottom: 1em;
+    }
+  }
+
+  .col {
+    max-width: 40%;
+  }
+}
+
+//
+//  Home customization
+//
+.home-customization {
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+  background: linear-gradient(180deg, #ffffff 0%, #ffffff 63.36%, #f3f5f8 100%);
+
+  img {
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    margin-bottom: -5.5em;
+    max-width: 290%;
+
+    @media screen and (min-width: $tablet) {
+      max-width: none;
+      width: calc(100% + 12em);
+      margin-left: -6em;
+      margin-right: -6em;
+    }
+  }
+
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -7%;
+    height: 14%;
+    background-image: radial-gradient(
+      closest-side,
+      rgba(0, 0, 0, 0.2) 0%,
+      transparent 100%
+    );
+  }
+}
+
+.home-customization__scroll-view {
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+
+  @media screen and (min-width: $tablet) {
+    overflow: visible;
+  }
+}
+
+//
+//  Home install
+//
+.home-install {
+  background-repeat: no-repeat;
+  background-image: url("/images/install/mobile-haft.png");
+  background-position: center bottom;
+  background-size: auto 20em;
+  padding-bottom: 20em;
+
+  @media (min-width: $tablet) {
+    @include flexbox();
+    padding-bottom: 0;
+    background-image: url("/images/install/mobile.png");
+    background-size: auto 90%;
+    background-position: right -40% bottom;
+    // margin-top: -19em;
+
+    .wrap {
+      padding: 2em;
+    }
+  }
+
+  @media (min-width: 62em) {
+    background-position: right bottom;
+
+    .wrap {
+      padding: 3em 4em;
+      max-width: 50%;
+    }
+  }
+}
+
+.home-install__icons {
+  @media (min-width: $tablet) {
+    max-width: 75%;
+  }
+
+  img {
+    margin-right: 1em;
+    width: 1.8em;
+    height: auto;
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+
+.home-install__button {
+  text-align: center;
+  margin: 2em 0;
+
+  @media (min-width: $tablet) {
+    margin: 0;
+    text-align: left;
+  }
+}
+
+//
+//  Home endless
+//
+.home-endless {
+  img {
+    display: inline-block;
+  }
+}
+
+//
+//  Home clients
+//
+.home-clients {
+  @include flexbox();
+  @include align-items(center);
+  @include flex-wrap(wrap);
+  @include justify-content(space-around);
+
+  @media (min-width: $tablet) {
+    @include flex-wrap(nowrap);
+  }
+
+  span {
+    max-width: 10em;
+    padding: 1em 1.2em;
+
+    @media (min-width: $tablet) {
+      padding: 1em 2.2em;
+      max-width: none;
+    }
+  }
+}

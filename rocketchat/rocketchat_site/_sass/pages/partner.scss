@@ -1,0 +1,64 @@
+body.partners {
+  background-image: url("/images/partners/hero-planet.png");
+  background-position: center 8.1%;
+  background-repeat: no-repeat;
+  background-size: 22vw;
+
+  @media (min-width: 38em) {
+    background-position: center 6.9%;
+  }
+}
+
+.partners-hero__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  background-image: url("../images/partners/hero.png");
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
+.partner-box {
+  margin-bottom: 5em;
+  background-repeat: no-repeat;
+  background-image: url("/images/partners/become.png");
+  background-position: right bottom;
+  background-size: auto 20em;
+  padding-bottom: 20em;
+
+  @media (min-width: $tablet) {
+    @include flexbox();
+    padding-bottom: 0;
+    background-size: auto 90%;
+    background-position: right bottom;
+
+    .wrap {
+      padding: 2em;
+      max-width: 30%;
+    }
+  }
+
+  @media (min-width: 62em) {
+    background-position: right bottom;
+
+    .wrap {
+      padding: 3em 4em;
+      max-width: 50%;
+    }
+  }
+
+  img {
+    width: 9em;
+    margin-right: 1em;
+  }
+}
+
+body.partner .partner-box {
+  @media (min-width: $tablet) {
+    margin-bottom: 10em;
+  }
+}

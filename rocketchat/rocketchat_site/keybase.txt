@@ -1,0 +1,87 @@
+==================================================================
+https://keybase.io/gabrielengel
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://rocket.chat
+  * I am gabrielengel (https://keybase.io/gabrielengel) on keybase.
+  * I have a public key with fingerprint 5C55 8035 3165 D42F D89E  1371 A9FF 0AD7 DEE4 0258
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0101aedc1286a8d0c222c3fcc66c25787d72cf8e290cad6302f0b3e6a32b15856c2f0a",
+      "fingerprint": "5c5580353165d42fd89e1371a9ff0ad7dee40258",
+      "host": "keybase.io",
+      "key_id": "a9ff0ad7dee40258",
+      "kid": "0101aedc1286a8d0c222c3fcc66c25787d72cf8e290cad6302f0b3e6a32b15856c2f0a",
+      "uid": "0a455238fd3f857f638de3fe14d28e19",
+      "username": "gabrielengel"
+    },
+    "merkle_root": {
+      "ctime": 1508244011,
+      "hash_meta": "d6bd8f15d1fc75729dce03b48a8d3287ffa74052236a38a77d02b46855d5126a",
+      "seqno": 1590504
+    },
+    "revoke": {
+      "sig_ids": [
+        "e3670510086009cdf1deceda17486e677bf28443f6b75919a930b04c3d06c0f00f"
+      ]
+    },
+    "service": {
+      "hostname": "rocket.chat",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1508244041,
+  "expire_in": 157680000,
+  "prev": "40c7c66e5dd31cd63c74ce80dc6db2be3217b68ff6870e9c2e1b296f4e62b6e1",
+  "seqno": 55,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.76
+Comment: https://keybase.io/crypto
+
+yMPdAnicrZN7bBRVFMZ3CyJWQEIrDy0NGRAVWnLnztyZu0UEUzAtj7aUAhUKy8y9
+d7bbfcwyO11oWjAFpKBWHipRoIZHIIg8BRF8FNgUseFpgUIIlQaEIAYCPrq1BPEO
+YkyMfzr/TGbmd77zne/MbejeyZXs/vhB8vnvf0gqdh+LV5S7XrvWkVsp6CatELIq
+hQB7eGNByqK2N+CnQpYARCBqjBIRYkXDFBAIIZEMQhSFQKRilaqQGJhBDyAaVSQA
+DaBLTNEkqIsII04ZQBMyBMMf9jErYvnDNpdFBCEMJCSJCqIyNCj2MFFSRc1jcJyq
+lDEZQIR5YakZdSq4OV2LsmF+k7/jD96H9v6D/599l/8lp8kIQQkbVDIwUg1FwpRJ
+BhNlCjETPQ4YZVZYCzFO+zTd8rMg4xMHhXkZQohZgSDzWqZpOwET2+9gIgIYyjIQ
+RT6kFi31hpit8Wqq6BQbIqKiQVSkQg8lDEi6jPkcEsSqYWiqDBCEEneLNVWlAOqy
+ghGiSISKYzrKZodNp4MHICBzBxaLmQHmNI/6fTy6qJA1XWCSogIkAoAVADyEGiJl
+hFFNVGWsMEVVdQNiWZYMRVeRR/RoHgnoQCYSBQoBBgCGMGOe08yK+clDcWdXjzKw
+TBJg9jBSqtncUMQybZOYQf6h1LYj0SwnFrsi4pBzmO59pOHV/WHKfxReEWNW1G+G
++RCc/FdiMk+MzY34Leb1OwRSFQz45fRhMS4pA6LyTTNEqSQSvl6iyoRhQIlCdagz
+CYqqrmDDULAKmIdAJurQoxgyU6CuMPGfCBHiPjUf1+TBhTW73GLCvPjhks4ud7Kr
+y2NJzglyJT/R8+9zVTv5qftpAyurCsty9a1L05o29W5Rv9u7g3W/e3blkDsXS67f
+vFiYKG7ptSl2evySF2b61tWnvnejMS++SjjyzPC3fCvbcnvfTVwNVJ3LnPHGobg5
+eX9o5GHj/Id1sxu0/H4jn59+4NS9x+XrP42bdiVedJKmJeZvnBI72x4tKxPPVzau
+KhxbX/DmzpP0sq/LkfzJ196l7a2tfYYOnJbiuv2kOHvOp9V574y6sGV4JEVtuj7p
+wNsPcou2d1SiaJ+SBadq3k8ManZ39LVq6vYd277zXuvT5NviFb5LQ+dPS+mffvP2
+6tbqAZGfAzNzeg9LKj7VtnB7+y47sSHl0txFmV7Xl4I8onOPwpLYgviYMdcWS4lf
+fyxafeKXrl8NaAy59ZZeM4JnKhZtmZrety44Jqmf/Gz2559lZvcZ3Hy0orUlvypc
+m3O7asqgKafXHVxRdqG9adYe12/9zcbRbTvcX58rTxtfLMxaMGH0Vdg+2H1oX9cD
+sbUT/jjx+0vdJ31yiZT2fP252lXZY1Hm7o6Je/GobfUdC8e2FNSytiv2ysvVR9GI
+huX3d1/44oP0UNG40Ibm45dzpnaqSr0h5SzOX9+tx8Gt69amti/bdrFTWdmujKZb
+3dLjeRk7vokc37LnxdRZOyce2by0+UTiys0Ja/bW3VkOqneZPTe/PLjjI6WgXjuT
+WtBwdf2i7Fc2Jhfl9TVrlg1Zs//V6klnbt3/EybMCTQ=
+=XqZJ
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/gabrielengel
+
+==================================================================

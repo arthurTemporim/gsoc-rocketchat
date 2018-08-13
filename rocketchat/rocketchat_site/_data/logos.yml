@@ -1,0 +1,23 @@
+- name: Wordmark Light
+  file: logo
+  main: svg
+  svg: true
+  png: false
+
+- name: Wordmark Dark
+  file: logo-dark
+  main: svg
+  svg: true
+  png: false
+
+- name: Logo
+  file: 512x512
+  main: svg
+  svg: true
+  png: true
+
+- name: Rocket.Cat
+  file: rocketcat
+  main: png
+  svg: false
+  png: true

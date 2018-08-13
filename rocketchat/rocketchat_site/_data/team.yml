@@ -1,0 +1,294 @@
+- name: Gabriel Engel
+  role: Founder &amp; CEO
+  github_username: engelgabriel
+  twitter: gabriel_engel
+  # email: email@email.com
+  department:
+  username: gabriel.engel
+  photo: yes
+  country: Brazil
+
+- name: Rodrigo Nascimento
+  role: CTO
+  github_username: rodrigok
+  department: Technology
+  username: rodrigo.nascimento
+  photo: yes
+  country: Brazil
+
+- name: Marcelo Schmidt
+  role: COO
+  github_username: marceloschmidt
+  department: Operations
+  username: marcelo.schmidt
+  photo: yes
+  country: Brazil
+
+- name: Diego Sampaio
+  role: Lead Engineer
+  github_username: sampaiodiego
+  department:
+  username: diego.sampaio
+  photo: yes
+  country: Brazil
+
+- name: Patricia Ferreira
+  role: Administrative Coordinator
+  github_username:
+  department: Admin
+  username: patricia.ferreira
+  photo: yes
+  country: Brazil
+
+- name: Sing Li
+  role: Chief Opportunities Officer
+  github_username: Sing-Li
+  github_uid: 122633
+  department: Sales
+  username: sing.li
+  photo: yes
+  country: Canada
+
+- name: Bradley Hilton
+  role: Lead Apps Engineer
+  github_username: graywolf336
+  department: Technology
+  username: bradley.hilton
+  photo: yes
+  country: USA
+
+- name: Aaron Ogle
+  role: Lead Cloud Architect
+  github_username: geekgonecrazy
+  github_uid: 51996
+  department: Cloud
+  username: aaron.ogle
+  photo: yes
+  country: USA
+
+- name: Rafael Kellermann Streit
+  role: Lead Mobile Engineer
+  github_username: rafaelks
+  department: Mobile
+  username: rafael.kellermann
+  photo: yes
+  country: Brazil
+
+- name: Martin Schoeler
+  role: Full Stack Engineer &amp; Technical Writer
+  github_username: MartinSchoeler
+  department: Technology &amp; Marketing
+  username: martin.schoeler
+  photo: yes
+  country: Brazil
+
+- name: Diego Dorgam
+  role: Senior Sales & Bots Engineer
+  github_username: diegodorgam
+  github_uid: 12052193
+  department: Sales
+  username: diego.dorgam
+  country: Brazil
+  photo: yes
+
+- name: Guilherme Gazzo
+  role: Lead Front End Engineer
+  github_username: ggazzo
+  department: Technology
+  username: guilherme.gazzo
+  photo: yes
+  country: Brazil
+
+- name: Gabriel Delavald
+  role: Senior Front End Engineer
+  github_username: gdelavald
+  department: Technology
+  username: gabriel.delavald
+  photo: yes
+  country: Brazil
+
+- name: Manish Kakoti
+  role: Federation Engineer
+  github_username: madguy02
+  github_uid: 8217234
+  department: Development
+  username: madguy02
+  country: India
+
+- name: Filipe Brito
+  role: Android Engineer
+  github_username: filipedelimabrito
+  github_uid: 11776825
+  department: Development
+  username: filipe.brito
+  photo: yes
+  country: Brazil
+
+- name: Lucio Maciel
+  role: Android Engineer
+  github_username: luciofm
+  github_uid: 224255
+  department: Mobile
+  username: lucio.maciel
+  country: Brazil
+
+- name: Jonas Friedmann
+  role: Support Analyst
+  github_username: frdmn
+  github_uid: 944459
+  department: Support
+  username: jonas.friedmann
+  photo: yes
+  country: Germany
+
+- name: Arthur Della Giustina
+  role: Creative Director
+  github_username: arthurgiustina
+  department: Sales
+  username: arthur.giustina
+  photo: yes
+  country: Brazil
+
+- name: Júlia Grala
+  role: Senior Business Developer
+  github_username: juliagrala
+  department: Sales
+  username: julia.grala
+  photo: yes
+  country: Brazil
+
+- name: Leonardo Aramaki
+  role: Android Engineer
+  github_username: leonardoaramaki
+  github_uid: 625702
+  department: Mobile
+  username: leonardo.aramaki
+  country: Brazil
+
+- name: Matheus Cardoso
+  role: iOS Engineer
+  github_username: cardoso
+  department: Mobile
+  username: matheus.cardoso
+  photo: yes
+  country: Brazil
+
+- name: Theo Renck
+  role: Project Manager
+  github_username: dtheorenck
+  department: Operations
+  username: theo.renck
+  photo: yes
+  country: Brazil
+
+- name: Diego Mello
+  role: Mobile Engineer
+  github_username: diegolmello
+  department: Mobile
+  username: diego.mello
+  photo: yes
+  country: Brazil
+
+- name: Carolina Freitas
+  role: Business Development
+  github_username: carolinacfreitas
+  department: Sales
+  username: carolina.freitas
+  photo: yes
+  country: Brazil
+
+- name: Renato Becker
+  role: Senior Developer
+  github_username: renatobecker
+  department: Back-end
+  username: renato.becker
+  photo: yes
+  country: Brazil
+
+- name: Tom Tostanoski
+  role: Support Lead
+  github_username: tostanoski
+  github_uid: 6999314
+  department: Support
+  username: tom.tostanoski
+  photo: yes
+  country: USA
+
+- name: Marcos Defendi
+  role: Software Engineer
+  github_username: MarcosSpessatto
+  department: Back-end
+  username: marcos.defendi
+  photo: yes
+  country: Brazil
+
+- name: Isabella Russell
+  role: Marketing Lead
+  department: Marketing
+  username: isabella.russell
+  github_username: isabellarussell
+  photo: yes
+  country: United Kingdom
+
+- name: Pierre Lehnen
+  role: Software Engineer
+  github_username: Hudell
+  department: Back-end
+  username: pierre.lehnen
+  photo: yes
+  country: Brazil
+
+- name: Leandro Coletti
+  role: VP of Sales
+  github_username: coletti
+  department: Sales
+  username: leandro.coletti
+  photo: yes
+  country: Brazil
+
+- name: Filipe Alvarenga
+  role: iOS Engineer
+  github_username: filipealva
+  department: Mobile
+  username: filipe.alvarenga
+  country: Brazil
+  
+- name: Thiago Sanchez
+  role: Head of Product Design
+  github_username: thiagosanchz
+  department: Design
+  username: thiago.sanchez
+  photo: yes
+  country: Brazil
+
+- name: Bruno Quadros
+  role: Product Designer
+  github_username: brunosquadros
+  department: Design
+  username: bruno.quadros
+  photo: yes
+  country: Brazil
+
+- name: Tasso Evangelista
+  role: Front End Engineer
+  github_username: tassoevan
+  department: Technology
+  username: tasso.evangelista
+  photo: no
+  country: Brazil
+
+- name: Rafael Specht
+  role: Senior Front End Engineer
+  github_username: rssilva
+  department: Technology
+  username: rafael.specht
+  photo: no
+  country: Brazil
+
+- name: Lucia Guevgeozian
+  role: Cloud Engineer
+  github_username: LuluGO
+  department: Cloud 
+  username: lucia.guevgeozian
+  photo: no
+  country: Uruguay
