@@ -28,7 +28,8 @@ services:
       - '3000:3000'
 
   bot_rasa:
-    build: ../show/Dockerfile
+    # This need to be your path to Dockerfile
+    build: /home/arthur/Gsoc/work/final/gsoc-rocketchat/show
     environment:
       - TRAINING_EPOCHS=300
       - PORT=5005
