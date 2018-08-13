@@ -37,7 +37,12 @@ rm -rf .git
 git clone https://github.com/RocketChat/botkit-starter-rocketchat
 cd botkit-starter-rocketchat
 rm -rf .git
+npm install
 ```
+
+* Add my [botkit studio](https://studio.botkit.ai) token to `.env` file.
+
+* Insert the bot name to `.env` file
 
 # Rocket.Chat
 ```sh
