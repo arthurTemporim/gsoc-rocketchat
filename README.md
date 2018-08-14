@@ -123,6 +123,10 @@ npm install
 * I Implemented the bot behavior in the botkit studio, if you want to test,
 this is my `.env` file:
 
+* **Important**: **botkit studio** have a limited number of requests, so
+maybe when you try to use this bot with my token, the bot can not be 
+able to answer. If you have some trouble, email me or create an issue :D
+
 ```
 # Environment Config
 
@@ -173,14 +177,6 @@ LEARNING_MODE=true
 * Add my [botkit studio](https://studio.botkit.ai) token to `.env` file.
 
 * Insert the bot name to `.env` file
-
-# Rocket.Chat
-```sh
-docker-compose up -d mongo
-docker-compose up rocketchat
-```
-
-* Add all bot users to Rocket.Chat
 
 ## Rocket.Chat site
 ```sh
