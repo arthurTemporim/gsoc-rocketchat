@@ -1,5 +1,10 @@
 # GSOC - OpenSource BotFrameworks
 
+## Presentation
+
+[![GSOC Open Source Bot Framework](https://img.youtube.com/vi/kuDlwnlX67k/0.jpg)](https://www.youtube.com/watch?v=kuDlwnlX67k)
+
+## Overview
 This is an example of use of Rasa, Botkit and Botpress with Rocketchat.
 
 * To configure each bot some steps were needed, in this README you will see
@@ -16,6 +21,8 @@ so don't forget to use the **latest** version of each connector.
 * [botkit](https://github.com/RocketChat/rasa_core)
 
 ## GREET
+![bp_flow](https://github.com/arthurTemporim/gsoc-rocketchat/wiki/images/bp_flow.png)
+
 ### botpress
 ```sh
 git clone https://github.com/RocketChat/botpress-kick-starter
@@ -54,6 +61,9 @@ It is needed to configure Livechat with this bot, in the **Rocket.chat** dir
 i already added the livechat script to the index page.
 
 ## SHOW
+
+![rasa_flow](https://github.com/arthurTemporim/gsoc-rocketchat/wiki/images/rasa_flow.png)
+
 ### Rasa
 ```sh
 git clone https://github.com/RocketChat/rasa-kick-starter
@@ -112,6 +122,9 @@ Post as: show
 **Save** all the changes.
 
 # SELL
+
+![bk_studio](https://github.com/arthurTemporim/gsoc-rocketchat/wiki/images/bk_studio.png)
+
 ## botkit
 ```sh
 git clone https://github.com/RocketChat/botkit-starter-rocketchat

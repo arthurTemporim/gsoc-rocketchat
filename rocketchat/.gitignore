@@ -1,2 +1,6 @@
-# Rocketchat directory
-chat/
+_site/
+.sass-cache/
+.jekyll-metadata
+.ruby-version
+
+.DS_Store
