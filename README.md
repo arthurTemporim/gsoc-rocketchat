@@ -48,6 +48,11 @@ You can check the **DialogFlow** of the **greet** bot accessing:
 
 * `localhost:3001` and click in **flow** button.
 
+### Livechat
+
+It is needed to configure Livechat with this bot, in the **Rocket.chat** dir
+i already added the livechat script to the index page.
+
 ## SHOW
 ### Rasa
 ```sh
